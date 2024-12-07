@@ -1,10 +1,10 @@
 package com.evaluacion.kosmos.Models;
 
-
 import javax.persistence.*;
 
 @Entity
 @Table(name = "personas")
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Persona {
 
     @Id
